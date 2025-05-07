@@ -453,7 +453,7 @@ img{
   justify-content: center;
   justify-self: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
   max-width: max-content;
   width: 100%;
   grid-column: auto;
