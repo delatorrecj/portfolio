@@ -67,6 +67,19 @@
   }
 }
 
+/* Initial hidden state */
+body.preload {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Once revealed */
+body.loaded {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -262,10 +275,10 @@ img{
 /*===== INFO =====*/
 .info,
 .about,
-.slills{
+.skills{
     background-color: var(--container-color);
-    padding: 2rem 1.5rem;
-    border-radius: 2rem;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1.5rem;
 }
 
 .info__circle{
@@ -321,7 +334,6 @@ img{
 .about__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-regular);
-    margin-bottom: 1rem;
 }
 
 .about__social{
@@ -380,7 +392,6 @@ img{
 .skills__title{
     font-size: var(--h2-font-size);
     margin-bottom: .5rem;
-    margin-top: 1.5rem;
     justify-self: center;
 }
 
@@ -395,11 +406,12 @@ img{
 }
 
 .skills__items{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.5rem;
-    margin-block: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-block: 1.5rem;
+  justify-content: center;
 }
 
 .skills__description{
@@ -435,29 +447,38 @@ img{
 }
 
 /*=============== AFFILIATIONS ===============*/
+.affiliations__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  gap: 1.5rem;
+  max-width: max-content;
+  width: 100%;
+  grid-column: auto;
+  
+}
+
 .affiliation__title{
-  font-size: var(--h3-font-size);
+  font-size: var(--h2-font-size);
   text-align: center;
-  padding: 0px 0px;
+  padding-block: 1rem;
 }
 
 .affiliation__list{
-  max-width: max-content;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   justify-self: center;
-  gap: 1.5rem;
-  margin-block: 1.5rem;
-  width: max-content;
-  height: 100px;
-  background-color: var(--container-color);
-  padding-inline: .75rem;
-  display: flex;
   align-items: center;
-  column-gap: 2rem;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--container-color);
   border-radius: 3rem;
-  margin-bottom: 1.5rem;
+  max-width: max-content;
+  width: 100%;
+  grid-column: auto;
 }
 
 .affiliation__list:hover{
@@ -468,7 +489,7 @@ img{
 .affiliation__icon{
   width: 2.5rem;
   height: 2.5rem;
-  transition: transform .4s;
+  transition: transform .4s ease;
 }
 
 .affiliation__icon:hover{
@@ -707,7 +728,8 @@ img{
   transition: color .4s;
 }
 
-.footer__link:hover{
+.footer__link:hover,
+.footer__logo:hover{
   color: var(--text-color);
 }
 
@@ -788,7 +810,8 @@ img{
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px){
-  .container{
+  .container,
+  .affiliation__list{
     margin-inline: 1rem;
   }
 
@@ -808,6 +831,10 @@ img{
 
   .footer__content{
     column-gap: .5rem;
+  }
+
+  .affiliation__list{
+    border-radius: 2rem;
   }
 }
 
@@ -834,6 +861,11 @@ img{
   .contact__container{
     grid-template-columns: 380px;
     justify-content: center;
+  }
+
+  .affiliation__list{
+    margin-inline: 5rem;
+    border-radius: 2rem;
   }
 }
 

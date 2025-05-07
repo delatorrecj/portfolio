@@ -1,3 +1,25 @@
+setTimeout(() => {
+    document.body.classList.remove('preload');
+    document.body.classList.add('loaded');
+  }, 50);
+
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+    // reset: true, // Animations repeat
+})
+
+sr.reveal('.profile, .contact__form')
+sr.reveal('.info', {origin: 'left', delay: 800})
+sr.reveal('.skills', {origin: 'left', delay: 1000})
+sr.reveal('.about', {origin: 'right', delay: 1200})
+sr.reveal('.affiliations__container', {origin: 'bottom', delay: 100})
+sr.reveal('.projects__card, .services__card, .experience__card', {interval: 100})
+
 /*=============== EMAIL JS ===============*/
 const contactForm = document.getElementById('contact-form'),
         contactMessage = document.getElementById('contact-message')
@@ -55,19 +77,3 @@ const scrollActive = () =>{
 	})
 }
 window.addEventListener('scroll', scrollActive)
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2500,
-    delay: 400
-    // reset: true, // Animations repeat
-})
-
-sr.reveal('.profile, .contact__form')
-sr.reveal('.info', {origin: 'left', delay: 800})
-sr.reveal('.skills', {origin: 'left', delay: 1000})
-sr.reveal('.about', {origin: 'right', delay: 1200})
-sr.reveal('.affiliation__list', {origin: 'bottom', delay: 100})
-sr.reveal('.projects__card, .services__card, .experience__card', {interval: 100})
