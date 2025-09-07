@@ -1,0 +1,19 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="265" y="180" width="235" height="30" fill="white"/>
+<rect y="180" width="235" height="30" fill="white"/>
+<rect y="240" width="175" height="30" fill="white"/>
+<rect x="470" y="150" width="150" height="30" transform="rotate(-90 470 150)" fill="white"/>
+<rect x="265" y="500" width="320" height="30" transform="rotate(-90 265 500)" fill="white"/>
+<rect x="205" y="500" width="320" height="30" transform="rotate(-90 205 500)" fill="white"/>
+<rect x="145" y="500" width="260" height="30" transform="rotate(-90 145 500)" fill="white"/>
+<rect x="325" y="240" width="175" height="30" fill="white"/>
+<rect x="325" y="500" width="260" height="30" transform="rotate(-90 325 500)" fill="white"/>
+<rect y="150" width="150" height="30" transform="rotate(-90 0 150)" fill="white"/>
+<rect x="265" y="120" width="235" height="30" fill="white"/>
+<rect x="265" y="60" width="175" height="30" fill="white"/>
+<rect x="60" y="60" width="175" height="30" fill="white"/>
+<rect y="120" width="235" height="30" fill="white"/>
+<rect x="205" y="150" width="90" height="30" transform="rotate(-90 205 150)" fill="white"/>
+<rect x="265" y="150" width="90" height="30" transform="rotate(-90 265 150)" fill="white"/>
+<rect width="500" height="30" fill="white"/>
+</svg>
